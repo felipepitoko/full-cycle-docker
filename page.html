@@ -7,22 +7,62 @@
             font-style: oblique;
         }
 
-        small {
+        p {
+            font-size: large;
+        }
+
+        #fundo {
+            background-color: #a3a9fa;
+        }
+
+        #fundo2 {
+            background-color: aquamarine;
+        }
+
+        .paragrafoSerio {
+            font-size: x-large;
+            font-family: Arial;
+        }
+
+        .paragrafo1 {
             color: red;
             font-size: large;
             font-family: 'Lucida Sans';
+            display: inline;
         }
 
-        p {
+        .paragrafo1:after {
+            content: "\a";
+            white-space: pre;
+        }
+
+        .paragrafo2 {
+            color: blueviolet;
             font-size: large;
+            font-family: 'Lucida Sans';
+            display: inline;
+        }
+
+        .paragrafo2:after {
+            content: "\a";
+            white-space: pre;
         }
     </style>
 </head>
 
 <body>
-    <h1>Pagina da Vadia Puta</h1>
-    <p>Como encontrar uma vadia puta?</p>
-    <small>Basta olhar dentro de voce.</small>
+    <div id="fundo">
+        <h1>Pagina da Vadia Puta</h1>
+        <p class="paragrafoSerio">Como encontrar uma vadia puta?</p>
+        <small class="paragrafo1">Basta olhar dentro de voce.</small>
+    </div>
+    <div id="fundo2">
+        <h1>Buscando vadias putas</h1>
+        <p class="paragrafoSerio">Va onde o seu coracao deseja.</p>
+        <small class="paragrafo2">Se voce realmente quer encontrar, basta jogar aram</small>
+        <small class="paragrafo2">Ou pedir uma coca na UFPA</small>
+        <small class="paragrafo2">Ate quem sabe, ser cabeludo</small>
+    </div>
 </body>
 
 </html>
