@@ -8,8 +8,10 @@ const app = express()
 
 app.get('/',(req,res)=>{
     const link_pagina = new URL('page.html', import.meta.url)
-    const pagina = fs.readFileSync(link_pagina, 'utf-8')
-    return res.status(200).send(pagina)
+    // console.log(link_pagina)
+    // console.log(__dirname)
+    // const pagina = fs.readFileSync(link_pagina, 'utf-8')
+    return res.status(200).sendFile(__dirname+'page.html')
 })
 
 app.listen(process.env.PORT || 3000, ()=>{
